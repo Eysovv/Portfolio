@@ -1,0 +1,263 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+@media (max-width: 768px) { 
+    body {
+        margin: 1.5em;
+        margin-top: 1em;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
+
+p{
+    font-weight: lighter;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    border-radius: 0.5em;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: solid 0.1em black;
+    margin-bottom: 1em;
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    max-width: 6em;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 15fr 1fr;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding: 0.5em;
+}
+
+nav ul li{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav ul li img{
+    max-width: 4em;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 0.1s linear ease-in-out;
+}
+
+nav ul li p{
+    margin: 0;
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: 100;
+}
+
+nav ul li .contact{
+    margin-left: 1em;
+    border: solid 0.1em black;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    transition-duration: 100ms;
+}
+
+nav ul li .contact:hover{
+    border-bottom: solid 0.2em black;
+    border-right: solid 0.2em black;
+}
+
+nav ul li .contact:active{
+    background-color: black;
+    color: white;   
+}
+
+.contact{
+    right: 2.5em;
+}
+
+.eyso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: black;
+    border-radius: 1em;
+    color: white;
+    padding: 1em;
+    padding-top: 0;
+}
+
+#profielfoto{
+    border-radius: 50%;
+    max-width: 16em;
+}
+
+.eyso p{
+    display: flex;
+    flex-wrap: wrap;
+    font-style: italic;
+    max-width: 25em;
+    font-size: large;
+}
+
+.eysotxt{
+margin: 0;
+margin-top: 3em;
+}
+
+.eysotxt ::selection{
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .eysotxt {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+.choice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card1, .card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 0.3fr;
+    gap: 1em;
+    min-width: 15em;  /* Minimale breedte van de kaart */
+    max-width: 35em;  /* Maximale breedte van de kaart */
+    width: 100%; 
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 0.1em solid black;
+    border-bottom: 0.2em solid black;
+    border-right: 0.2em solid black;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+}
+
+.card2{
+    grid-template-columns: 1fr;
+}
+
+.card1 li:nth-child(1), .card2 li:nth-child(1){
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.card1 img, .card2 img {
+    width: 100%;
+    height: 100%;
+    max-height: 28em;
+    object-fit: cover;
+    display: block;
+    border: solid 0.1em black;
+}
+
+.card1 li:nth-child(4), .card2 li:nth-child(3){
+    grid-column: 1 / -1;
+    grid-row: 3;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.card1 a, .card2 a{
+    color: black;
+    border: solid 0.1em black;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.5em;
+    width: 30em;
+    transition-duration: 100ms;
+}
+
+.card1 a:hover, .card2 a:hover{
+    border-bottom: solid 0.2em black;
+    border-right: solid 0.2em black;
+}
+
+.card1 a:active, .card2 a:active{
+    background-color: black;
+    color: white;   
+}
+
+@media (max-width: 768px) {
+    .card1, .card2 {
+        min-width: 70%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .card1, .card2 {
+        min-width: 15em;
+    }
+}
+
+#ogen{
+    max-width: 4em;
+    max-height: 4em;
+    display: flex;
+    align-self: center;
+    margin-bottom: 1em;
+}
