@@ -1,0 +1,640 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+@media (max-width: 768px) { 
+    body {
+        margin: 1.5em;
+        margin-top: 1em;
+    }
+}
+
+#contact{
+    margin: 0;
+}
+
+#contact nav{
+    padding-left: 2em;
+    padding-top: 0.5em;
+}
+
+#contact .contactpagina{
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+#background{
+    opacity: 50%;
+}
+
+@media (max-width: 1000px){
+    #contact .contactpagina{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    #contact nav{
+        padding-left: 1.5em;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+::selection{
+    background-color: yellow;
+    color: black;
+}
+
+p{
+    font-weight: lighter;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0;
+}
+
+#h1{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+h2{
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+h3{
+    font-weight: lighter;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    border-radius: 0.5em;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: solid 0.1em black;
+    margin-bottom: 1em;
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+footer img{
+    max-width: 6em;
+}
+
+.line{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 1em;
+    width: 95%;
+    max-width: 120em;
+}
+
+@media (max-width: 375px) {
+    .line {
+        width: 20em;
+    }
+}
+@media (max-width: 655px) {
+    .line {
+        margin-bottom: 2em;
+    }
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding: 0.5em;
+}
+
+nav ul li{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav ul li img{
+    width: 3.5em;
+    border-radius: 20%;
+    transform: rotate(0deg);
+    transition: 0.1s linear ease-in-out;
+}
+
+nav ul li p{
+    margin: 0;
+    font-weight: bold;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: 100;
+}
+
+nav ul li .contact{
+    margin-left: 1em;
+    border: solid 0.1em black;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    transition-duration: 100ms;
+}
+
+nav ul li .contact:hover{
+    border-bottom: solid 0.2em black;
+    border-right: solid 0.2em black;
+}
+
+nav ul li .contact:active, .next:active{
+    background-color: black;
+    color: white;   
+}
+
+.contact{
+    right: 2.5em;
+}
+
+.eyso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    border-radius: 1em;
+    padding: 1em;
+    padding-top: 0;
+}
+
+#profielfoto{
+    max-width: 16em;
+    border-radius: 2.5em;
+    transition-duration: 500ms;
+}
+
+#profielfoto:hover{
+    background-color: yellow;
+    border-radius: 0;
+}
+
+#glitch{
+    width: 100%;
+    max-width: 25em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.eyso p{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 25em;
+    font-size: large;
+    margin-top: 0;
+}
+
+.eysotxt{
+    margin: 0;
+    margin-top: 2em;
+    margin-left: 3em;
+    padding: 0.5em;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .eysotxt {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 420x) {
+    .eysotxt {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 10em;
+    }
+}
+
+.choice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.card1, .card2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 0.3fr;
+    gap: 1em;
+    min-width: 15em;
+    max-width: 35em;
+    width: 100%; 
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 0.1em solid black;
+    border-bottom: 0.2em solid black;
+    border-right: 0.2em solid black;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.card2{
+    grid-template-columns: 1fr;
+}
+
+.card1 li:nth-child(1), .card2 li:nth-child(1){
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.card1 img, .card2 img {
+    width: 100%;
+    height: 100%;
+    max-height: 28em;
+    object-fit: cover;
+    display: block;
+    border: solid 0.1em black;
+}
+
+.card1 li:nth-child(4), .card2 li:nth-child(3){
+    grid-column: 1 / -1;
+    grid-row: 3;
+    text-align: center;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.card1 a, .card2 a, .next{
+    color: black;
+    border: solid 0.1em black;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 0.5em;
+    transition-duration: 100ms;
+}
+
+.card1 a:hover, .card2 a:hover, .next:hover{
+    border-bottom: solid 0.2em black;
+    border-right: solid 0.2em black;
+}
+
+.card1 a:active, .card2 a:active{
+    background-color: black;
+    color: white;   
+}
+
+@media (max-width: 768px) {
+    .card1, .card2 {
+        min-width: 70%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .card1, .card2 {
+        min-width: 15em;
+    }
+}
+
+.frontend, .vid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 1em;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2.5em;
+}
+
+.frontendheading{
+    margin: 0.5em;
+    margin-top: 1em;
+    margin-right: 2em;
+    width: 12em;
+}
+
+.frontendimgs{
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.frontend li img{
+    width: 100%;
+    max-width: 11em;
+    border: 0.1em solid black;
+    margin-right: 0.5em;
+}
+
+@media (max-width: 429px) { 
+    .frontend li img{
+        max-width: 11em;
+    }
+}
+
+@media (max-width: 426px) { 
+    .frontend li img{
+        max-width: 10.5em;
+    }
+}
+
+@media (max-width: 410px) { 
+    .frontend li img{
+        max-width: 9.3em;
+    }
+}
+
+.frontendtxt{
+    width: 20em;
+    margin: 1em;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.vidimg{
+    width: 100%;
+    max-width: 22.5em;
+    border: 0.1em solid black;
+}
+
+@media (max-width: 378px){
+    .vidimg{
+        max-width: 20em;
+    }
+}
+
+.next{
+    display: flex;
+    justify-content: center;
+    width: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.slide{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 100%;
+}
+
+.slide img{
+    height: 18em;
+    width: auto;
+}
+
+@media (max-width: 1200px){
+    .slide img{
+        height: auto;
+        width: 100%;
+    }
+
+    #eigen h2{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px){
+    .slide img{
+        height: 15em;
+        width: auto;
+    }
+}
+
+@media (min-width: 1650px){
+    .slide img{
+        height: 20em;
+        width: auto;
+    }
+}
+
+@media (min-width: 1900px){
+    .slide img{
+        height: 23em;
+        width: auto;
+    }
+}
+
+.tekenen, .overig{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.tekeningen{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.tekeningen img, .overigeslide img{
+    max-width: 100%;
+    height: auto;
+}
+
+.overig h2{
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.overigeslide{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.overigeslide img{
+    max-height: 30em;
+}
+
+.contactpagina{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    color: black;
+    padding: 3em;
+    background-color: white;
+    border: solid black 0.1em;
+    border-radius: 2em;
+}
+
+.contactimg{
+    max-width: 20em;
+    min-width: 10em;
+    height: auto;
+    width: 100%;
+    border-radius: 2em;
+}
+
+.contacttxt{
+    width: 30em;
+    margin-top: 2em;
+}
+
+@media (max-width: 780px){
+    .contactpagina{
+        padding: 1.5em;
+        margin-top: 2em;
+    }
+
+    .contacttxt{
+        margin-top: 0;
+    }
+
+    .tekenen, .overig{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .tekeningen{
+        flex-wrap: wrap;
+    }
+
+    #contact .line{
+        margin-bottom: 2em;
+    }
+}
+
+.email{
+    text-decoration: underline;
+}
+
+.linkedin{
+    display: flex;
+    align-items: center;
+}
+
+.linkedin img{
+    max-width: 3em;
+    margin: 1em;
+    margin-left: 0;
+}
+
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 0;
+}
+
+.indipage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin-top: 3em;
+}
+
+.pageimg{
+    max-height: 75em;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.pageimg img{
+    max-height: 70em;
+    width: auto;
+    border: 0.1em solid black;
+}
+
+.pagetext{
+    max-width: 25em;
+    padding: 1em;
+}
+
+@media (max-width: 1750px){
+    .pageimg{
+        max-height: 40em;
+    }
+
+    .pageimg img{
+        max-height: 35em;
+    }
+}
+
+.vidpage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1.5em;
+}
+
+.vidpageimg{
+    max-height: 75em;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.vidpageimg img{
+    display: flex;
+    flex-direction: column;
+    max-width: 40em;
+    border: 0.1em solid black;
+}
+
+@media (max-width: 700px){
+    .vidpageimg{
+        max-width: 30em;
+    }
+
+    .pagetext{
+        max-width: none;
+        padding: 0;
+        margin-top: 2em;
+    }
+
+    .frontend, .vid{
+        justify-content: start;
+    }
+}
