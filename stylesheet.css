@@ -440,6 +440,13 @@ nav ul li .contact:active, .next:active{
     }
 }
 
+@media (min-width: 1400px){
+    .slide img{
+        height: 18em;
+        width: auto;
+    }
+}
+
 @media (min-width: 1650px){
     .slide img{
         height: 20em;
