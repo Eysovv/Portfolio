@@ -44,15 +44,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-    if (isTouchDevice) {
-        const cursor = document.querySelector('.cursor');
-        if (cursor) {
-            cursor.style.display = 'none';
-        }
-        document.body.style.cursor = 'auto';
-    }
-});
