@@ -224,6 +224,7 @@ nav ul li a{
 nav ul li button{
     font-size: large;
     margin-left: 1em;
+    color: black;
     background-color: white;
     border: solid 0.1em black;
     padding: 0.8em;
