@@ -2,12 +2,43 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     margin-left: 2em;
     margin-right: 2em;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        rgb(255, 255, 255) 1px,
+        #ffffff 1px,
+        #ffffff 1px
+    );
+    cursor: none;
 }
 
 @media (max-width: 768px) { 
     body {
         margin: 1.5em;
         margin-top: 1em;
+    }
+}
+
+* {
+    cursor: none !important;
+}
+
+.cursor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    pointer-events: none;
+    border: 20px solid rgba(255, 255, 255, 0.8);
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-out, border 0.2s ease-out;
+    z-index: 10;
+}
+
+#contact {
+    * {
+        cursor: default !important;
     }
 }
 
@@ -60,6 +91,7 @@ h1{
     font-size: xx-large;
     font-weight: bold;
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #h1{
@@ -72,6 +104,7 @@ h2{
     margin: 0;
     font-weight: bold;
     margin-bottom: 0.5em;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h3{
@@ -97,7 +130,6 @@ header{
     position: sticky;
     top: 0;
     background-color: white;
-    border-bottom: solid 0.1em black;
     margin-bottom: 1em;
 }
 
@@ -133,6 +165,22 @@ footer img{
     .line {
         margin-bottom: 2em;
     }
+
+    .menu-bar ul {
+        flex-direction: column; /* Zet de items onder elkaar */
+        align-items: center; /* Zorgt ervoor dat de items gecentreerd blijven */
+    }
+
+    .menu-bar ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+    }
+
+    .menu-bar ul li a {
+        padding: 1em;
+    }
 }
 
 nav ul{
@@ -142,6 +190,7 @@ nav ul{
     gap: 1em;
     margin: 0;
     padding: 0.5em;
+    border-bottom: solid 0.1em black;
 }
 
 nav ul li{
@@ -166,22 +215,71 @@ nav ul li a{
     font-weight: 100;
 }
 
-nav ul li .contact{
+nav ul li button{
+    font-size: large;
     margin-left: 1em;
+    background-color: white;
     border: solid 0.1em black;
     padding: 0.8em;
     border-radius: 0.5em;
     transition-duration: 100ms;
 }
 
-nav ul li .contact:hover{
+nav ul li button:hover{
     border-bottom: solid 0.2em black;
     border-right: solid 0.2em black;
 }
 
-nav ul li .contact:active, .next:active{
+nav ul li button:active, .next:active{
     background-color: black;
     color: white;   
+}
+
+.menu-bar {
+    display: none;
+    position: sticky;
+    top: 100%; 
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em 0;
+    border: solid 0.1em black;
+    border-top: none;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 100%;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.menu-bar ul li {
+    font-size: large;
+    text-align: center;
+}
+
+.menu-bar ul li a {
+    font-size: large;
+    margin-left: 1em;
+    color: black;
+    background-color: white;
+    border: solid 0.1em black;
+    border-bottom: solid 0.2em black;
+    border-right: solid 0.2em black;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    transition-duration: 100ms;
+}
+
+.menu-bar ul li a:hover {
+    color: white;
+    background-color: black;
+    border-bottom: solid 0.2em black;
+    border-right: solid 0.2em black;
 }
 
 .contact{
@@ -409,6 +507,11 @@ nav ul li .contact:active, .next:active{
     margin-bottom: 2em;
 }
 
+.film p, .tekenen p, .overig p{
+    max-width: 23em;
+    margin: 1em;
+}
+
 .slide{
     display: flex;
     justify-content: space-evenly;
@@ -466,6 +569,16 @@ nav ul li .contact:active, .next:active{
     margin-bottom: 5em;
 }
 
+.tekenen p:first-of-type {
+
+    width: 23em;
+}
+
+.tekenen p:last-of-type {
+    width: 23em;
+}
+
+
 .tekeningen{
     display: flex;
     flex-wrap: nowrap;
@@ -492,6 +605,10 @@ nav ul li .contact:active, .next:active{
 
 .overigeslide img{
     max-height: 30em;
+}
+
+#contact button{
+    margin-right: 1.5em;
 }
 
 .contactpagina{
@@ -577,6 +694,11 @@ nav ul li .contact:active, .next:active{
     justify-content: center;
     height: 100%;
     margin-top: 3em;
+    gap: 2em;
+}
+
+.indipage p{
+    margin-top: 2em;
 }
 
 .pageimg{
@@ -588,7 +710,7 @@ nav ul li .contact:active, .next:active{
 }
 
 .pageimg img{
-    max-height: 70em;
+    max-height: 40em;
     width: auto;
     border: 0.1em solid black;
 }
@@ -596,6 +718,10 @@ nav ul li .contact:active, .next:active{
 .pagetext{
     max-width: 25em;
     padding: 1em;
+}
+
+.pagetext p{
+    margin-top: 2em;
 }
 
 @media (max-width: 1750px){
@@ -613,6 +739,7 @@ nav ul li .contact:active, .next:active{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 1.5em;
+    gap: 2em;
 }
 
 .vidpageimg{
