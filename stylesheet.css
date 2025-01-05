@@ -17,6 +17,12 @@ body{
         margin: 1.5em;
         margin-top: 1em;
     }
+    .cursor {
+        display: none;
+    }
+    * {
+        cursor: auto !important;
+    }
 }
 
 * {
