@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Interface Design</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="cursor"></div>
     <main>
         <header>
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html"><img src="images/Vorm88.svg" alt=""></a>
+                        <a href="index.html"><img src="images/Vorm88.svg" alt="Eyso"></a>
                     </li>
                     <li>
                         <a href="index.html"><p>Portfolio</p></a>
                         <a href="index.html">Eyso van Voorthuizen</a>
                     </li>
                     <li>
-                        <a class="contact" href="contactpagina.html">Contact</a>
+                        <button>Menu</button>
                     </li>
                 </ul>
             </nav>
+            <div id="menuBar" class="menu-bar">
+                <ul>
+                    <li><a href="cmd_projecten_pagina.html">CMD Projecten</a></li>
+                    <li><a href="eigen_projecten_pagina.html">Eigen Projecten</a></li>
+                    <li><a href="contactpagina.html">Contact</a></li>
+                </ul>
+            </div>
         </header>
-
         <article>
             <ul class="vidpage">
                 <li class="vidpageimg">
@@ -54,8 +61,7 @@
                 </li>
             </ul>
         </article>
-
     </main>  
-    
+    <script src="script.js"></script>
 </body>
 </html>
