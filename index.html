@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="cursor"></div>
     <main>
         <header>
             <nav>
@@ -20,10 +21,17 @@
                         <a href="index.html">Eyso van Voorthuizen</a>
                     </li>
                     <li>
-                        <a class="contact" href="contactpagina.html">Contact</a>
+                        <button>Menu</button>
                     </li>
                 </ul>
             </nav>
+            <div id="menuBar" class="menu-bar">
+                <ul>
+                    <li><a href="cmd_projecten_pagina.html">CMD Projecten</a></li>
+                    <li><a href="eigen_projecten_pagina.html">Eigen Projecten</a></li>
+                    <li><a href="contactpagina.html">Contact</a></li>
+                </ul>
+            </div>
         </header>
 
         <article class="eyso">
@@ -32,7 +40,9 @@
             </div>
             <div class="eysotxt">
                 <img id="glitch" src="images/glitchname1.gif" alt="">
-                <p>Hi! Ik ben een creatieve CMD'er met een passie voor design en techniek. Hier vind je projecten die mijn stijl en interesses laten zien. Van nature ben ik een vormgever maar ik voel de drang mij technisch verder te ontwikkelen. Ik kijk ernaar uit om verder te groeien in een professionele omgeving.</p>
+                <p>
+                    Hi! Ik ben een creatieve CMD'er met een passie voor design en techniek. Hier vind je projecten die mijn stijl en interesses laten zien. Van nature ben ik een vormgever maar ik voel de drang mij technisch verder te ontwikkelen. Ik kijk ernaar uit om verder te groeien in een professionele omgeving!
+                </p>
             </div>
         </article>
 
@@ -73,7 +83,7 @@
         <img class="line" src="images/starline.png" alt="">
 
         <footer>
-            <img src="images/eyso_illu.png" alt="">
+            <a href="contactpagina.html"><img src="images/eyso_illu.png" alt=""></a>
             <p>vind me op</p>
             <a href="https://www.linkedin.com/in/eyso-van-voorthuizen-000068250/" target="_blank"><img src="images/linkedin.png" alt=""></a>
         </footer>
