@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
+    <div class="cursor"></div>
     <main>
         <header>
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html"><img src="images/Vorm88.svg" alt=""></a>
+                        <a href="index.html"><img src="images/Vorm88.svg" alt="Eyso"></a>
                     </li>
                     <li>
                         <a href="index.html"><p>Portfolio</p></a>
                         <a href="index.html">Eyso van Voorthuizen</a>
                     </li>
                     <li>
-                        <a class="contact" href="contactpagina.html">Contact</a>
+                        <button>Menu</button>
                     </li>
                 </ul>
             </nav>
+            <div id="menuBar" class="menu-bar">
+                <ul>
+                    <li><a href="cmd_projecten_pagina.html">CMD Projecten</a></li>
+                    <li><a href="eigen_projecten_pagina.html">Eigen Projecten</a></li>
+                    <li><a href="contactpagina.html">Contact</a></li>
+                </ul>
+            </div>
         </header>
 
         <article>
@@ -31,18 +39,21 @@
                 <li class="pageimg">
                     <img src="images/frontend1.gif" alt="">
                     <img src="images/frontend2.gif" alt="">
+                    <img src="images/frontend3.gif" alt="">
                 </li>
                 <li class="pagetext">
                     <h1>Slamjam.com</h1>
                     <h3>Frontend Development</h3>
                     <p>
-                        Voor dit project heb ik de homepage en productpagina van de webshop Slamjam.com visueel nagebouwd met HTML, CSS en JavaScript code. Tijdens het project heb ik uitgebreid gewerkt met grid en flexbox om de structuur na te bootsen en heb ik geleerd hoe ik horizontaal scrollbare secties kan maken. Dit gaf me nieuwe inzichten in het ontwerpen van dynamische en functionele layouts.
-                    </p
-                    <p>Om de website beter af te stemmen op gebruikers met verschillende wensen, heb ik interactieve functies toegevoegd. Denk aan een dark/light mode, een optie om tekstgrootte aan te passen, en audio-feedback voor acties. Deze elementen maken de site toegankelijker en gebruiksvriendelijker voor een breed publiek.</p>
+                        Voor dit project heb ik de homepage en productpagina van de webshop Slamjam.com visueel nagebouwd met HTML, CSS en JavaScript code. Tijdens het project heb ik uitgebreid gewerkt met grid en flexbox om de structuur na te bootsen en heb ik geleerd hoe ik horizontaal scrollbare secties kan maken. Dit gaf me nieuwe inzichten in het ontwerpen van dynamische en functionele layouts. 
+                    </p>
+                    <p>
+                        Om de website beter af te stemmen op gebruikers met verschillende wensen, heb ik interactieve functies toegevoegd. Denk aan een dark/light mode, een optie om tekstgrootte aan te passen, en audio-feedback voor acties. Deze elementen maken de site toegankelijker en gebruiksvriendelijk voor een breed publiek.
+                    </p>
                 </li>
             </ul>
         </article>
-
     </main>  
+    <script src="script.js"></script>
 </body>
 </html>
