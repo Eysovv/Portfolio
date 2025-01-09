@@ -514,7 +514,7 @@ nav ul li button:active, .next:active{
     margin-bottom: 2em;
 }
 
-.film p, .tekenen p, .overig p{
+.film p, .overig p{
     max-width: 23em;
     margin: 1em;
 }
@@ -575,16 +575,6 @@ nav ul li button:active, .next:active{
     margin-top: 5em;
     margin-bottom: 5em;
 }
-
-.tekenen p:first-of-type {
-
-    width: 23em;
-}
-
-.tekenen p:last-of-type {
-    width: 23em;
-}
-
 
 .tekeningen{
     display: flex;
